@@ -6,7 +6,7 @@ const html = `
 <!DOCTYPE html>
 <html>
 <head>
-    <title>DevOps Project</title>
+    <title>Dr. Sakshi Vashisht</title>
     <style>
         body {
             margin: 0;
@@ -14,13 +14,13 @@ const html = `
             background: #f4f4f4;
         }
         header {
-            background: #333;
+            background: #2c3e50;
             color: white;
             padding: 15px;
             text-align: center;
         }
         nav {
-            background: #555;
+            background: #34495e;
             padding: 10px;
             text-align: center;
         }
@@ -31,7 +31,7 @@ const html = `
             font-weight: bold;
         }
         nav a:hover {
-            color: yellow;
+            color: #f1c40f;
         }
         .container {
             padding: 20px;
@@ -45,8 +45,11 @@ const html = `
             box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
             border-radius: 10px;
         }
+        ul {
+            text-align: left;
+        }
         footer {
-            background: #333;
+            background: #2c3e50;
             color: white;
             padding: 10px;
             position: fixed;
@@ -59,13 +62,13 @@ const html = `
 <body>
 
 <header>
-    <h1>🚀 DevOps Project</h1>
-    <p>Welcome Laddo 👋</p>
+    <h1>👩‍⚕️ Dr. Sakshi Vashisht</h1>
+    <p>MBBS Doctor | Passionate Healthcare Professional</p>
 </header>
 
 <nav>
     <a href="/">Home</a>
-    <a href="/about">About</a>
+    <a href="/skills">Skills</a>
     <a href="/contact">Contact</a>
 </nav>
 
@@ -74,7 +77,7 @@ const html = `
 </div>
 
 <footer>
-    <p>© 2026 DevOps Project | Built by Laddo</p>
+    <p>© 2026 Dr. Sakshi Vashisht | Healthcare & Care</p>
 </footer>
 
 </body>
@@ -88,22 +91,33 @@ const server = http.createServer((req, res) => {
     if (req.url === "/") {
         content = `
         <div class="card">
-            <h2>Home</h2>
-            <p>This is your DevOps project running successfully 🎉</p>
+            <h2>Welcome</h2>
+            <p>Dr. Sakshi Vashisht has recently completed her MBBS and is dedicated to providing quality healthcare services.</p>
         </div>`;
     } 
-    else if (req.url === "/about") {
+    else if (req.url === "/skills") {
         content = `
         <div class="card">
-            <h2>About</h2>
-            <p>This project demonstrates CI/CD, Docker, Kubernetes, and Terraform.</p>
+            <h2>Top 10 Skills</h2>
+            <ul>
+                <li>Patient Diagnosis</li>
+                <li>Clinical Examination</li>
+                <li>Emergency Care</li>
+                <li>Medical Documentation</li>
+                <li>Communication Skills</li>
+                <li>Team Collaboration</li>
+                <li>Prescription Management</li>
+                <li>Basic Surgical Assistance</li>
+                <li>Time Management</li>
+                <li>Patient Counseling</li>
+            </ul>
         </div>`;
     } 
     else if (req.url === "/contact") {
         content = `
         <div class="card">
             <h2>Contact</h2>
-            <p>Email: laddo.devops@example.com</p>
+            <p>Email: sakshi.doctor@example.com</p>
         </div>`;
     } 
     else {
@@ -119,5 +133,15 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, "0.0.0.0", () => {
-    console.log(`Server running at http://0.0.0.0:${PORT}`);
+    console.log(\`Server running at http://0.0.0.0:\${PORT}\`);
 });
+    
+   
+        
+            
+        
+        
+            
+          
+      
+           
