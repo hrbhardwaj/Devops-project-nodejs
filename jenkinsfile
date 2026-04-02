@@ -35,7 +35,7 @@ pipeline {
 
         stage('Run Container') {
             steps {
-                sh 'docker run -d -p $PORT:$PORT --name $CONTAINER_NAME $APP_NAME'
+                sh 'docker run -d -p $PORT:$PORT --name $CONTAINER_NAME --restart=always $APP_NAME'
             }
         }
     }
